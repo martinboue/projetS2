@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 445.0, 403.0, 640.0, 480.0 ],
+		"rect" : [ 625.0, 402.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 44.0, 251.5, 142.0, 22.0 ],
 					"style" : "",
 					"text" : "syntheseFM.maxpat 587"
@@ -55,7 +55,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 228.0, 251.5, 142.0, 22.0 ],
 					"style" : "",
 					"text" : "syntheseFM.maxpat 699"
@@ -68,7 +68,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 393.0, 251.5, 142.0, 22.0 ],
 					"style" : "",
 					"text" : "syntheseFM.maxpat 440"
@@ -104,9 +104,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 311.0, 61.0, 150.0, 20.0 ],
+					"patching_rect" : [ 194.0, 73.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "syntheseFM"
+					"text" : "syntheseFM ACCORD"
 				}
 
 			}
@@ -119,7 +119,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.666626, 73.0, 545.0, 369.0 ],
+					"patching_rect" : [ 11.666626, 39.0, 548.0, 403.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -217,19 +217,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "syntheseFM.maxpat",
-				"bootpath" : "~/Documents/gitKraken/projetS2/votreAppli/regieAudio/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "simpleFM~.maxpat",
-				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",

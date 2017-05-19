@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -716921687,
-	"viewrect" : [ 269.0, 370.0, 300.0, 500.0 ],
+	"modificationdate" : -716916212,
+	"viewrect" : [ 75.0, 827.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,16 @@
 			}
 ,
 			"syntheseFM.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/gitKraken/projetS2/votreAppli/regieAudio/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"mixageAudio.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
