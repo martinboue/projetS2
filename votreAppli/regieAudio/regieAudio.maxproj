@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -715800297,
-	"viewrect" : [ 198.0, 87.0, 300.0, 500.0 ],
+	"modificationdate" : -715788666,
+	"viewrect" : [ 21.0, 92.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -21,28 +21,23 @@
 				"local" : 1
 			}
 ,
-			"effetAudio1.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"effetAudio2.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
+			}
+,
+			"effetAudio1.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"mixageAudio.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"envoiAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
@@ -51,14 +46,14 @@
 
 			}
 ,
-			"envoiAudioReseau.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"receptionOSC.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -68,6 +63,25 @@
 				"kind" : "audiofile",
 				"local" : 1
 			}
+,
+			"JAIME.m4a" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"LE.m4a" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"SIGNAL.m4a" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 

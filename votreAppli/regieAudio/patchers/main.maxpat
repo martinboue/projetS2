@@ -45,7 +45,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 771.0, 155.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 782.5, 286.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -71,7 +70,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 516.5, 155.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 483.5, 247.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -82,7 +80,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 535.0, 299.0, 184.0, 22.0 ],
+					"patching_rect" : [ 501.0, 322.0, 184.0, 22.0 ],
 					"style" : "",
 					"text" : "envoiAudioReseau.maxpat 8004"
 				}
@@ -97,7 +95,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 273.5, 151.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 254.5, 294.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -146,7 +143,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 385.0, 184.0, 22.0 ],
+					"patching_rect" : [ 52.0, 400.0, 184.0, 22.0 ],
 					"style" : "",
 					"text" : "envoiAudioReseau.maxpat 8002"
 				}
@@ -368,9 +365,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 819.0, 236.0, 155.0, 22.0 ],
+					"patching_rect" : [ 819.0, 236.0, 194.0, 22.0 ],
 					"style" : "",
-					"text" : "lecteurAudio.maxpat jongly"
+					"text" : "lecteurAudio.maxpat SIGNAL.m4a"
 				}
 
 			}
@@ -454,9 +451,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 576.0, 236.0, 156.0, 22.0 ],
+					"patching_rect" : [ 576.0, 236.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "lecteurAudio.maxpat eroica"
+					"text" : "lecteurAudio.maxpat LE.m4a"
 				}
 
 			}
@@ -540,9 +537,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 325.0, 236.0, 167.0, 22.0 ],
+					"patching_rect" : [ 325.0, 236.0, 185.0, 22.0 ],
 					"style" : "",
-					"text" : "lecteurAudio.maxpat rainstick"
+					"text" : "lecteurAudio.maxpat JAIME.m4a"
 				}
 
 			}
