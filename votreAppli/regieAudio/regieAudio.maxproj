@@ -2,7 +2,7 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -716915135,
+	"modificationdate" : -715800297,
 	"viewrect" : [ 198.0, 87.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -23,7 +23,12 @@
 ,
 			"effetAudio1.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"effetAudio2.maxpat" : 			{
@@ -37,6 +42,21 @@
 			}
 ,
 			"mixageAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"envoiAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"receptionOSC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
