@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 636.0, 89.0, 946.0, 613.0 ],
+		"rect" : [ 511.0, 93.0, 838.0, 539.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,45 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 201.0, 384.0, 122.0, 22.0 ],
+					"style" : "",
+					"text" : "mixageAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 304.5, 276.0, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "effetAudio1.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 51.0, 289.5, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "effetAudio2.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "comment",
@@ -116,9 +155,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 23.5, 235.0, 167.0, 22.0 ],
+					"patching_rect" : [ 23.5, 235.0, 228.0, 22.0 ],
 					"style" : "",
-					"text" : "lecteurAudio.maxpat rainstick"
+					"text" : "lecteurAudio.maxpat SCATMAN_01.mp3"
 				}
 
 			}
@@ -128,7 +167,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 449.0, 364.0, 45.0, 45.0 ],
+					"patching_rect" : [ 402.5, 464.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -385,25 +424,16 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 286.0, 235.0, 153.0, 22.0 ],
+					"patching_rect" : [ 286.0, 235.0, 167.0, 22.0 ],
 					"style" : "",
-					"text" : "lecteurAudio.maxpat anton"
+					"text" : "lecteurAudio.maxpat rainstick"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -421,16 +451,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-25", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
@@ -466,10 +487,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-21", 1 ]
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -478,7 +518,17 @@
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-21", 0 ]
+					"order" : 1,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -511,16 +561,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-33", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
@@ -573,8 +614,46 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-25::obj-2" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-25::obj-19" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-25::obj-14" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-25::obj-1" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-25::obj-4" : [ "live.gain~[6]", "live.gain~", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "lecteurAudio.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "effetAudio2.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pedaleWahWah.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/ressourcesMAX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "effetAudio1.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "social.aif",
+				"bootpath" : "C74:/packages/max-mxj/examples",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mixageAudio.maxpat",
 				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
