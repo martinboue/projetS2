@@ -2,7 +2,7 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -716914863,
+	"modificationdate" : -715787663,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -16,37 +16,13 @@
 				"toplevel" : 1
 			}
 ,
-			"envoiAudioReseau.maxpat" : 			{
+			"mixageVideo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "/Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers",
-					"projectrelativepath" : "../../../../../../../Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers"
-				}
-
+				"toplevel" : 1
 			}
 ,
-			"receptionAudioReseau.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "/Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers",
-					"projectrelativepath" : "../../../../../../../Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers"
-				}
-
-			}
-,
-			"moduleReceptionAudio.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "/Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers",
-					"projectrelativepath" : "../../../../../../../Volumes/i161913/max semestre 2/projetS2-master/demo-TS/regieVideo/patchers"
-				}
-
-			}
-,
-			"mainAnalyseAudio.maxpat" : 			{
+			"assemblage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -61,19 +37,90 @@
 				"local" : 1
 			}
 ,
+			"effetVideoMirroir.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"toplevel" : 1
+			}
+,
+			"miroir.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"effetVideoNiveauDeGris.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"niveauDeGris.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"toplevel" : 1
+			}
+,
+			"receptionAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"receptionOSC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"lecteurVideo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"moduleReceptionAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"envoiAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mainAnalyseAudio.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"effetVideo.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 
 		}
 ,
 		"media" : 		{
+			"ALEXANE.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"CLAIRE.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"MARTIN.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"SCAPMAN.mp4" : 			{
+				"kind" : "moviefile",
+				"local" : 1
+			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 
