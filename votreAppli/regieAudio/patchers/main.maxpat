@@ -43,7 +43,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 97.0, 381.0, 122.0, 22.0 ],
+					"patching_rect" : [ 201.0, 384.0, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "mixageAudio.maxpat"
 				}
@@ -72,20 +72,6 @@
 					"patching_rect" : [ 51.0, 289.5, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio2.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ -128.0, 352.0, 100.0, 0.0 ],
-					"style" : "",
-					"text" : "effetAudio1.maxpat"
 				}
 
 			}
@@ -465,20 +451,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-25", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -512,40 +487,18 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-25", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-25", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -662,10 +615,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-25::obj-16" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-25::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-25::obj-2" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-25::obj-19" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-25::obj-14" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-25::obj-13" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-25::obj-1" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-25::obj-4" : [ "live.gain~[6]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -675,7 +629,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "effetAudio1.maxpat",
+				"name" : "effetAudio2.maxpat",
 				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -687,15 +641,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "social.aif",
-				"bootpath" : "C74:/packages/max-mxj/examples",
-				"type" : "AIFF",
+				"name" : "effetAudio1.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "effetAudio2.maxpat",
-				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
-				"type" : "JSON",
+				"name" : "social.aif",
+				"bootpath" : "C74:/packages/max-mxj/examples",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
