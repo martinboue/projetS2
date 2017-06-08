@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -715788666,
-	"viewrect" : [ 21.0, 92.0, 300.0, 500.0 ],
+	"modificationdate" : -715200055,
+	"viewrect" : [ 11.0, 102.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -38,22 +38,22 @@
 ,
 			"envoiAudioReseau.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
 			}
 ,
 			"receptionOSC.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
+			}
+,
+			"syntheseAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseFM.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
