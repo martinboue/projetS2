@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 628.0, 120.0, 1132.0, 755.0 ],
+		"rect" : [ 350.0, 105.0, 1132.0, 755.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 53.0, 387.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
@@ -65,7 +53,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1073.0, 159.0, 145.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurVideo MARTIN.jpg"
@@ -78,7 +66,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 890.333374, 159.0, 143.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurVideo CLAIRE.jpg"
@@ -91,7 +79,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 732.0, 159.0, 154.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurVideo ALEXANE.jpg"
@@ -104,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.0, 159.0, 166.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurVideo SCAPMAN.mp4"
@@ -117,7 +105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 8,
-					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int" ],
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 781.0, 31.0, 128.0, 22.0 ],
 					"style" : "",
 					"text" : "receptionOSC.maxpat"
@@ -130,7 +118,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 417.0, 309.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "AnalyseAudio.maxpat"
@@ -196,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.0, 257.0, 180.0, 22.0 ],
+					"patching_rect" : [ 583.333374, 279.0, 180.0, 22.0 ],
 					"style" : "",
 					"text" : "effetVideoNiveauDeGris.maxpat"
 				}
@@ -373,29 +361,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -546,14 +514,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-35::obj-13" : [ "flonum[7]", "flonum", 0 ],
-			"obj-25::obj-35::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-25::obj-35::obj-13" : [ "flonum[7]", "flonum", 0 ],
+			"obj-7::obj-35::obj-13" : [ "flonum", "flonum", 0 ],
 			"obj-26::obj-35::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
-			"obj-7::obj-35::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
+			"obj-25::obj-35::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
 			"obj-26::obj-35::obj-13" : [ "flonum[5]", "flonum", 0 ],
 			"obj-27::obj-35::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
 			"obj-27::obj-35::obj-13" : [ "flonum[3]", "flonum", 0 ],
-			"obj-25::obj-35::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
+			"obj-7::obj-35::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -582,7 +550,7 @@
 			}
 , 			{
 				"name" : "detectionEnveloppe.maxpat",
-				"bootpath" : "~/Documents/gitkraken/projetS2/votreAppli/regieVideo/patchers",
+				"bootpath" : "~/Documents/gitkraken/projetS2/ressourcesMAX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -615,22 +583,6 @@
 				"bootpath" : "~/Documents/gitkraken/projetS2/votreAppli/regieVideo/patchers",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "receptionOSC.maxpat",
-				"bootpath" : "~/Documents/gitkraken/projetS2/votreAppli/regieVideo/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lecteurVideo.maxpat",
-				"bootpath" : "~/Documents/gitkraken/projetS2/votreAppli/regieVideo/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
