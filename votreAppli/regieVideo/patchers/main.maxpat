@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 306.0, 79.0, 1132.0, 755.0 ],
+		"rect" : [ 628.0, 120.0, 1132.0, 755.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 53.0, 387.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "jit.pwindow",
@@ -181,10 +193,10 @@
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 594.0, 257.0, 180.0, 22.0 ],
+					"patching_rect" : [ 516.0, 257.0, 180.0, 22.0 ],
 					"style" : "",
 					"text" : "effetVideoNiveauDeGris.maxpat"
 				}
@@ -370,6 +382,26 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -514,14 +546,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-27::obj-35::obj-13" : [ "flonum[3]", "flonum", 0 ],
-			"obj-25::obj-35::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-27::obj-35::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
-			"obj-25::obj-35::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-7::obj-35::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
-			"obj-26::obj-35::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
 			"obj-7::obj-35::obj-13" : [ "flonum[7]", "flonum", 0 ],
-			"obj-26::obj-35::obj-13" : [ "flonum[5]", "flonum", 0 ]
+			"obj-25::obj-35::obj-13" : [ "flonum", "flonum", 0 ],
+			"obj-26::obj-35::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
+			"obj-7::obj-35::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
+			"obj-26::obj-35::obj-13" : [ "flonum[5]", "flonum", 0 ],
+			"obj-27::obj-35::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
+			"obj-27::obj-35::obj-13" : [ "flonum[3]", "flonum", 0 ],
+			"obj-25::obj-35::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -704,8 +736,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

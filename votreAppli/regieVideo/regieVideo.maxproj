@@ -2,7 +2,7 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715787663,
+	"modificationdate" : -715202102,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -108,13 +108,13 @@
 				"local" : 1
 			}
 ,
-			"MARTIN.jpg" : 			{
-				"kind" : "imagefile",
+			"SCAPMAN.mp4" : 			{
+				"kind" : "moviefile",
 				"local" : 1
 			}
 ,
-			"SCAPMAN.mp4" : 			{
-				"kind" : "moviefile",
+			"MARTIN.jpg" : 			{
+				"kind" : "imagefile",
 				"local" : 1
 			}
 
