@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 261.0, 172.0, 1297.0, 667.0 ],
+		"rect" : [ 320.0, 134.0, 1297.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 566.0, 236.0, 130.0, 22.0 ],
+					"style" : "",
+					"text" : "syntheseAudio.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "toggle",
@@ -80,7 +93,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 501.0, 322.0, 184.0, 22.0 ],
+					"patching_rect" : [ 516.5, 305.0, 184.0, 22.0 ],
 					"style" : "",
 					"text" : "envoiAudioReseau.maxpat 8004"
 				}
@@ -446,19 +459,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 576.0, 236.0, 165.0, 22.0 ],
-					"style" : "",
-					"text" : "lecteurAudio.maxpat LE.m4a"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -550,45 +550,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 2,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -956,19 +917,40 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-25", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
+					"order" : 2,
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 2 ],
+					"destination" : [ "obj-39", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
+					"order" : 0,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -983,7 +965,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
@@ -992,9 +974,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-25::obj-2" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-25::obj-19" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-25::obj-14" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-25::obj-19" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-25::obj-2" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-25::obj-1" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-25::obj-4" : [ "live.gain~[6]", "live.gain~", 0 ]
 		}
@@ -1044,6 +1026,24 @@
 , 			{
 				"name" : "receptionOSC.maxpat",
 				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syntheseAudio.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syntheseFM.maxpat",
+				"bootpath" : "~/Documents/GitKraken/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "simpleFM~.maxpat",
+				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
 				"type" : "JSON",
 				"implicit" : 1
 			}
