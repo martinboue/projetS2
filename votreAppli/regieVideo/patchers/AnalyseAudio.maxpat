@@ -38,101 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "Clap 01.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-18",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 226.0, 71.0, 150.0, 30.0 ],
+					"comment" : "",
+					"id" : "obj-4",
+					"index" : 1,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 304.5, 98.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 310.666626, 320.0, 45.0, 45.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "comment",
+					"comment" : "",
+					"id" : "obj-2",
+					"index" : 1,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.666626, 20.0, 127.666672, 20.0 ],
-					"style" : "",
-					"text" : "détection d'enveloppe "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "Kick 01.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-10",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 51.666626, 71.0, 150.0, 30.0 ],
+					"patching_rect" : [ 448.5, 501.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -145,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.666626, 213.0, 150.0, 22.0 ],
+					"patching_rect" : [ 364.666626, 280.0, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -158,7 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.666626, 183.0, 150.0, 22.0 ],
+					"patching_rect" : [ 354.666626, 250.0, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -170,7 +96,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.666626, 266.5, 208.0, 131.0 ],
+					"patching_rect" : [ 210.666626, 335.5, 208.0, 131.0 ],
 					"style" : ""
 				}
 
@@ -182,92 +108,39 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 51.666626, 183.0, 116.0, 22.0 ],
+					"patching_rect" : [ 210.666626, 250.0, 116.0, 22.0 ],
 					"style" : "",
 					"text" : "detectionEnveloppe"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.3 ],
-					"id" : "obj-15",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 25.666626, 42.0, 368.0, 386.0 ],
-					"proportion" : 0.39,
-					"style" : ""
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -290,31 +163,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-35::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-35::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "detectionEnveloppe.maxpat",
-				"bootpath" : "~/Documents/gitkraken/projetS2/ressourcesMAX",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Kick 01.wav",
-				"bootpath" : "C74:/packages/MaxIntroLessons/media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clap 01.wav",
-				"bootpath" : "C74:/packages/MaxIntroLessons/media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
