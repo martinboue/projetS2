@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 196.0, 143.0, 60.0, 22.0 ],
-					"presentation_rect" : [ 197.0, 143.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -58,7 +57,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 205.0, 262.0, 60.0, 22.0 ],
-					"presentation_rect" : [ 203.0, 262.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -72,7 +70,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 410.0, 246.0, 60.0, 22.0 ],
-					"presentation_rect" : [ 410.0, 246.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -259,7 +256,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 580.0, 268.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "martin"
+					"text" : "bourdo"
 				}
 
 			}
